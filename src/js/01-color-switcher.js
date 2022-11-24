@@ -17,6 +17,7 @@ refs.closeBtn.addEventListener('click', onCloseBtn);
 
 function onStartBtn (e) {
     onDisabledBtn(e);
+    makeChangeColor();
     document.querySelector('[data-stop]').disabled = false;
     timerId = setInterval(() => {
         makeChangeColor();
